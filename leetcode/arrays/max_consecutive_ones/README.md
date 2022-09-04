@@ -28,4 +28,30 @@ Array 를 횡단하면서 현재 값이 1이면 count 를 +1 하다 0이 되면 
 
 전체 입력 리스트를 한번만 횡단하면 되기 때문에 시간 복잡도는 $O(N)$,  
 공간 복잡도는 새로운 list 를 생성하지 않기 때문에 $O(1)$.
- 
+
+## 4. 코드
+
+```python
+from typing import List
+
+
+def find_max_consecutive_ones(nums: List[int]) -> int:
+    count = max_count = 0
+
+    for num in nums:
+
+        if num == 1:
+
+            # Increment the count of 1's by one.
+            count += 1
+
+        else:
+
+            # Find the maximum till now.
+            max_count = max(max_count, count)
+
+            # Reset count of 1.
+            count = 0
+
+    return max(max_count, count)
+```

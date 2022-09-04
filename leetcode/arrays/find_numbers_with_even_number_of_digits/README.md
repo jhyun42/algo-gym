@@ -36,4 +36,25 @@ digit count 를 modular 연산을 통해 짝수인지 홀수인지 확인하여 
 
 전체 입력 리스트를 한번만 횡단하면 되기 때문에 시간 복잡도는 $O(N)$,  
 공간 복잡도는 따로 list 를 생성하거나 하지 않기 때문에 $O(1)$.
- 
+
+## 4. 코드
+
+```python
+from typing import List
+
+
+def find_numbers(nums: List[int]) -> int:
+    num_even = 0
+    for num in nums:
+
+        digits_cnt = 1
+
+        while num >= 10:
+            digits_cnt += 1
+            num //= 10
+
+        if digits_cnt % 2 == 0:
+            num_even += 1
+
+    return num_even
+```
