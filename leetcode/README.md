@@ -16,7 +16,7 @@ Hard: <span style="color:red"> Hard </span>
 LeetCode
 ========
 
-LeetCode 의 Explore 로 공부하면서 발생하는 problem 들의 Solution code 와 설명을 Markdown 으로 정리하여 저장하는 repository 입니다.
+LeetCode 의 Explore 로 공부하면서 발생하는 problem 들의 solution code 와 설명을 Markdown 으로 정리하여 저장하는 repository 입니다.
 
 - 편의상 한글로 작성합니다.
 - Related Topic 별로, 디렉토리로 관리합니다.
