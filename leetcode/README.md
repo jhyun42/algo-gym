@@ -24,7 +24,7 @@ LeetCode 의 Explore 로 공부하면서 발생하는 problem 들의 solution co
 
 - 편의상 한글로 작성합니다.
 - Related Topic 별로, 디렉토리로 관리합니다.
-- 각 문제들은 디렉토리로 관리되며, 각 문제는 설명 README.md 로, 코드를 solution.py 로 관리 합니다.
+- 각 문제들은 디렉토리로 관리되며, 각 문제는 설명 README.md 로, 코드를 solution.py 로 관리합니다.
 - Solution 은 대부분 Python 으로 작성합니다.
 
 ## Solution Description Rules
@@ -35,6 +35,7 @@ LeetCode 의 Explore 로 공부하면서 발생하는 problem 들의 solution co
     1. 문제 설명
     2. 문제 풀이
     3. 시간 복잡도 & 공간 복잡도
+    4. Python 코드
 - 그림을 써도 좋습니다. 그림은 각 문제 디렉토리에 assets 폴더를 생성하여 관리합니다.
 - 절대로 귀찮아 하지 않고 설명하는 것을 연습한다 생각하고 천천히 작성합니다.
 
@@ -44,3 +45,4 @@ LeetCode 의 Explore 로 공부하면서 발생하는 problem 들의 solution co
 | --- | :---: | :---: | :---: | :---: |
 | Max Consecutive Ones | [Arrays](./arrays/) | <span style="color:green"> Easy </span> | [📝](./arrays/find_numbers_with_even_number_of_digits/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/max_consecutive_ones/solution.py)|
 | Find Numbers With Even Number of Digits | [Arrays](./arrays/) | <span style="color:green"> Easy </span> | [📝](./arrays/max_consecutive_ones/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/find_numbers_with_even_number_of_digits/solution.py)|
+| Find Pivot Index | [Arrays](./arrays/) | <span style="color:green"> Easy </span> | [📝](./arrays/find_pivot_index/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/find_pivot_index/solution.py)|

@@ -4,7 +4,7 @@
 
 정수의 배열이 주어졌을 때, 자릿수가 짝수인 정수의 개수를 반환하라.
 
-Example 1:
+### Example 1:
 
 ```
 Input: nums = [12,345,2,6,7896]
@@ -18,7 +18,7 @@ Explanation:
 Therefore only 12 and 7896 contain an even number of digits.
 ```
 
-Example 2:
+### Example 2:
 
 ```
 Input: nums = [555,901,482,1771]

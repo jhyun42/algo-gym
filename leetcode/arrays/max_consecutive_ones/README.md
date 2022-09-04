@@ -4,7 +4,7 @@
 
 이진 배열이 주어질 때 1이 가장 많이 연속될 때의 횟수를 구하라
 
-Example 1:
+### Example 1:
 
 ```
 Input: nums = [1,1,0,1,1,1]
@@ -12,7 +12,7 @@ Output: 3
 Explanation: The first two digits or the last three digits are consecutive 1s. The maximum number of consecutive 1s is 3.
 ```
 
-Example 2:
+### Example 2:
 
 ```
 Input: nums = [1,0,1,1,0,1]
