@@ -2,10 +2,21 @@ from typing import List
 
 
 def find_max_consecutive_ones(nums: List[int]) -> int:
-    m = nums[0]
+    count = max_count = 0
 
-    for i in range(1, len(nums)):
-        nums[i] = nums[i] * (nums[i] + nums[i - 1])
-        m = max(nums[i], m)
+    for num in nums:
 
-    return m
+        if num == 1:
+
+            # Increment the count of 1's by one.
+            count += 1
+
+        else:
+
+            # Find the maximum till now.
+            max_count = max(max_count, count)
+
+            # Reset count of 1.
+            count = 0
+
+    return max(max_count, count)
