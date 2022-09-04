@@ -42,5 +42,5 @@ LeetCode 의 Explore 로 공부하면서 발생하는 problem 들의 solution co
 
 | Title | Related Topics | Difficulty | Description | Solution |
 | --- | :---: | :---: | :---: | :---: |
-| Max Consecutive Ones | [Arrays](./arrays/) | <span style="color:green"> Easy </span> | [📄](./arrays/find_numbers_with_even_number_of_digits/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/max_consecutive_ones/solution.py)|
-| Find Numbers With Even Number of Digits | [Arrays](./arrays/) | <span style="color:green"> Easy </span> | [📄](./arrays/max_consecutive_ones/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/find_numbers_with_even_number_of_digits/solution.py)|
+| Max Consecutive Ones | [Arrays](./arrays/) | <span style="color:green"> Easy </span> | [📝](./arrays/find_numbers_with_even_number_of_digits/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/max_consecutive_ones/solution.py)|
+| Find Numbers With Even Number of Digits | [Arrays](./arrays/) | <span style="color:green"> Easy </span> | [📝](./arrays/max_consecutive_ones/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/find_numbers_with_even_number_of_digits/solution.py)|
