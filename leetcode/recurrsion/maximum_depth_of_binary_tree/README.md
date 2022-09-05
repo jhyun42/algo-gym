@@ -27,7 +27,7 @@ Output: 2
 
 ![img_01](./assets/01.jpg)
 
-1. Base case는 현재 노드가 `None`일 때. Base case에서 0을 반환한다.
+1. Base case는 현재 노드가 `None`일 때. Base case에서 `0`을 반환한다.
 2. 각각의 엣지를 통해 depth를 종단하면서 depth count를 +1 한다.
 3. 현재 노드의 오른쪽 또는 왼쪽 각각의 엣지의 depth를 비교해서 더 큰 depth를 현재 depth로 결정한다.
 
