@@ -47,7 +47,7 @@ Explanation: There are three ways to climb to the top.
 
 ## 3. 시간 복잡도 & 공간 복잡도
 
-시간 복잡도는 계단을 오르는 경우의 수를 나타내는 tree의 depth인 N만큼에 비례한다 $O(N)$,  
+시간 복잡도는 계단을 오르는 경우의 수를 나타내는 tree의 depth인 N만큼 비례한다 $O(N)$,  
 공간 복잡도는 계단을 오르는 경우의 수를 나타내는 tree의 depth만큼의 재귀 호출로 인해 $O(N)$.
 
 ## 4. 코드
