@@ -4,9 +4,9 @@ Related Topics marks:
 Arrays: [Arrays](./arrays/)
 
 Difficulty marks:
-Easy: <span style="color:green"> Easy </span>
-Medium: <span style="color:orange"> Medium </span>
-Hard: <span style="color:red"> Hard </span>
+Easy: <span style="color:green"> Easy </span> 🍏
+Medium: <span style="color:orange"> Medium </span> 🍊
+Hard: <span style="color:red"> Hard </span> 🍒
 
 Description marks:
 [📄]({question_path})
@@ -43,11 +43,11 @@ LeetCode 의 Explore 로 공부하면서 발생하는 problem 들의 solution co
 
 | Title | Related Topics | Difficulty | Description | Solution |
 | --- | :---: | :---: | :---: | :---: |
-| Max Consecutive Ones | [Arrays](./arrays/) | <span style="color:green"> Easy </span> | [📝](./arrays/find_numbers_with_even_number_of_digits/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/max_consecutive_ones/solution.py)|
-| Find Numbers With Even Number of Digits | [Arrays](./arrays/) | <span style="color:green"> Easy </span> | [📝](./arrays/max_consecutive_ones/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/find_numbers_with_even_number_of_digits/solution.py)|
-| Find Pivot Index | [Arrays](./arrays/) | <span style="color:green"> Easy </span> | [📝](./arrays/find_pivot_index/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/find_pivot_index/solution.py)|
-| Squares of a Sorted Array | [Arrays](./arrays/) | <span style="color:green"> Easy </span> | [📝](./arrays/squares_of_a_sorted_array/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/squares_of_a_sorted_array/solution.py)|
-| Remove Element | [Arrays](./arrays/) | <span style="color:green"> Easy </span> | [📝](./arrays/remove_element/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/remove_element/solution.py)|
-| Valid Mountain Array | [Arrays](./arrays/) | <span style="color:green"> Easy </span> | [📝](arrays/valid_mountain_array/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/valid_mountain_array/solution.py)|
-| Swap Nodes in Pairs | [Recurrsion](./recurrsion/) | <span style="color:orange"> Medium </span> | [📝](./recurrsion/swap_nodes_in_pairs/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./recurrsion/swap_nodes_in_pairs/solution.py)|
-| Reverse Linked List | [Recurrsion](./recurrsion/) | <span style="color:green"> Easy </span> | [📝](./recurrsion/reverse_linked_list/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./recurrsion/reverse_linked_list/solution.py)|
+| Max Consecutive Ones | [Arrays](./arrays/) | <span style="color:green"> Easy </span> 🍏 | [📝](./arrays/find_numbers_with_even_number_of_digits/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/max_consecutive_ones/solution.py)|
+| Find Numbers With Even Number of Digits | [Arrays](./arrays/) | <span style="color:green"> Easy </span> 🍏 | [📝](./arrays/max_consecutive_ones/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/find_numbers_with_even_number_of_digits/solution.py)|
+| Find Pivot Index | [Arrays](./arrays/) | <span style="color:green"> Easy </span> 🍏 | [📝](./arrays/find_pivot_index/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/find_pivot_index/solution.py)|
+| Squares of a Sorted Array | [Arrays](./arrays/) | <span style="color:green"> Easy </span> 🍏 | [📝](./arrays/squares_of_a_sorted_array/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/squares_of_a_sorted_array/solution.py)|
+| Remove Element | [Arrays](./arrays/) | <span style="color:green"> Easy </span> 🍏 | [📝](./arrays/remove_element/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/remove_element/solution.py)|
+| Valid Mountain Array | [Arrays](./arrays/) | <span style="color:green"> Easy </span> 🍏 | [📝](arrays/valid_mountain_array/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./arrays/valid_mountain_array/solution.py)|
+| Swap Nodes in Pairs | [Recurrsion](./recurrsion/) | <span style="color:orange"> Medium </span> 🍊 | [📝](./recurrsion/swap_nodes_in_pairs/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./recurrsion/swap_nodes_in_pairs/solution.py)|
+| Reverse Linked List | [Recurrsion](./recurrsion/) | <span style="color:green"> Easy </span> 🍏 | [📝](./recurrsion/reverse_linked_list/) | [<img alt="py" src="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>](./recurrsion/reverse_linked_list/solution.py)|
