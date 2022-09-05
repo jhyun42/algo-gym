@@ -11,7 +11,7 @@ Mountain array란:
     - `arr[i] > arr[i + 1] > ... > arr[arr.length - 1]`.
     - `arr[0] < arr[1] < ... < arr[i - 1] < arr[i]`.
 
-![mountain array](./assets/01.jpg)
+![img_01](./assets/01.jpg)
 
 ### Example 1:
 
@@ -41,7 +41,7 @@ Output: true
 
 ## 2. 문제 풀이
 
-![mountain array_sol](./assets/02.jpg)
+![img_02](./assets/02.jpg)
 
 1. 어래이를 횡단하는 `i`포인터 생성.
 2. `while`을 통해 `arr[i] < arr[i + 1]`가 성립할 때까지 traverse.
