@@ -1,7 +1,10 @@
 import sys
 
 inputs = sys.stdin.readline
+
+# Confusing start_y ,start_x order. The problem should have been explained more clearly.
 y_len, x_len, start_y, start_x, k = map(int, inputs().split())
+
 dice_map = [list(map(int, inputs().split())) for _ in range(y_len)]
 cmd_order = list(map(int, inputs().split()))
 
