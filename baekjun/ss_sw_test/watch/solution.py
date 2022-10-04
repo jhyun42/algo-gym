@@ -18,6 +18,11 @@ def solution():
             if MAP[row][col] != 0 and MAP[row][col] != 6:
                 pos_cctv.append((row, col, MAP[row][col]))
 
+    def copy_map(dest, src):
+        for r in range(N):
+            for c in range(M):
+                dest[r][c] = src[r][c]
+
     def update(direction, curr_cctv):
         global MAP
 
@@ -68,7 +73,8 @@ def solution():
 
         curr_cctv_type = pos_cctv[cctv_idx][-1] - 1
         for direction in range(rot_possibilities[curr_cctv_type]):
-            backup_map = copy.deepcopy(MAP)
+            backup_map = [[0] * M for _ in range(N)]
+            copy_map(backup_map, MAP)
 
             if curr_cctv_type == 0:
                 update(direction=direction, curr_cctv=pos_cctv[cctv_idx])
@@ -93,8 +99,7 @@ def solution():
                 update(direction=direction + 3, curr_cctv=pos_cctv[cctv_idx])
 
             backtracking(cctv_idx + 1)
-
-            MAP = backup_map
+            copy_map(MAP, backup_map)
 
     backtracking(0)
 
