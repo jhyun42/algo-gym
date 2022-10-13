@@ -1,5 +1,4 @@
-# 맞왜틀?
-
+import collections
 import sys
 
 N, M = map(int, input().split())
@@ -11,52 +10,36 @@ INF = sys.maxsize
 
 def activate_virus(curr_active_virus_list):
     global N, MAP
-
-    map_copy = [[0 for _ in range(N)] for _ in range(N)]
+    empty_count = 0
     for row in range(N):
         for col in range(N):
-            map_copy[row][col] = MAP[row][col]
-            if map_copy[row][col] == 2 and (row, col) not in curr_active_virus_list:
-                map_copy[row][col] = -1
+            if MAP[row][col] == 0:
+                empty_count += 1
 
-    ret = 0
-    prev_virus_list = list(curr_active_virus_list)
-    is_updated = True
+    queue = collections.deque()
+    visited = [[0 for _ in range(N)] for _ in range(N)]
+    for virus_y, virus_x in curr_active_virus_list:
+        queue.append((virus_y, virus_x, 0))
+        visited[virus_y][virus_x] = 1
 
-    while is_updated:
+    while queue:
+        curr_y, curr_x, curr_time = queue.popleft()
+        if MAP[curr_y][curr_x] == 0:
+            empty_count -= 1
 
-        is_updated = False
-        tmp_virus_list = prev_virus_list
-        prev_virus_list = []
+        if empty_count == 0:
+            return curr_time
 
-        for virus_y, virus_x in tmp_virus_list:
+        for diff_y, diff_x in DIRECTIONS:
+            next_y = diff_y + curr_y
+            next_x = diff_x + curr_x
+            if next_y < 0 or next_y >= N or next_x < 0 or next_x >= N:
+                continue
+            if visited[next_y][next_x] == 0 and MAP[next_y][next_x] != 1:
+                queue.append((next_y, next_x, curr_time + 1))
+                visited[next_y][next_x] = True
 
-            for diff_y, diff_x in DIRECTIONS:
-                new_y = virus_y + diff_y
-                new_x = virus_x + diff_x
-
-                if new_y < 0 or new_y >= N or new_x < 0 or new_x >= N:
-                    continue
-
-                if map_copy[new_y][new_x] != 0:
-                    if map_copy[new_y][new_x] == -1:
-                        map_copy[new_y][new_x] = 2
-                        prev_virus_list.append((new_y, new_x))
-                    continue
-
-                map_copy[new_y][new_x] = 2
-                prev_virus_list.append((new_y, new_x))
-                is_updated = True
-
-        if is_updated:
-            ret += 1
-
-    for row in range(N):
-        for col in range(N):
-            if map_copy[row][col] == 0:
-                return INF
-
-    return ret
+    return INF
 
 
 def solution():
