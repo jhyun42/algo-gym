@@ -1,4 +1,4 @@
-DICE_POSSIBLES = list(map(int, input().split()))
+DICE_POSSIBILITIES = list(map(int, input().split()))
 
 BOARD_SCORE = [
     0, 2, 4, 6, 8,
@@ -10,7 +10,7 @@ BOARD_SCORE = [
     27, 26, 0
 ]
 
-TO_GO_LOOKUP = [
+GOTO_LOOKUP = [
     [1, 2, 3, 4, 5],
     [2, 3, 4, 5, 6],
     [3, 4, 5, 6, 7],
@@ -48,16 +48,16 @@ TO_GO_LOOKUP = [
 
 
 def get_score(state):
-    global BOARD_SCORE, TO_GO_LOOKUP
+    global BOARD_SCORE, GOTO_LOOKUP, DICE_POSSIBILITIES
 
     ret = 0
     visited = [False] * len(BOARD_SCORE)
     four_piece_pos = [0] * 4
 
     for idx, piece_to_move in enumerate(state):
-        move = DICE_POSSIBLES[idx] - 1
+        move = DICE_POSSIBILITIES[idx] - 1
         curr_pos = four_piece_pos[piece_to_move]
-        next_pos = TO_GO_LOOKUP[curr_pos][move]
+        next_pos = GOTO_LOOKUP[curr_pos][move]
         add_score = BOARD_SCORE[next_pos]
 
         if visited[next_pos] and next_pos != 32:
@@ -82,7 +82,7 @@ def permutations(array, r):
 
 
 def solution():
-    global DICE_POSSIBLES, CELLS, TO_GO_LOOKUP
+    global DICE_POSSIBILITIES, GOTO_LOOKUP
 
     ret = 0
 

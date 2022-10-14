@@ -96,7 +96,7 @@ def fold_tanks(board):
                 new_r = 2 * stack_height - row - 1
                 new_c = 2 * mid + stack_start - col - 1
                 board[new_r][new_c] = board[row][col + stack_start]
-                board[row][col + stack_start] = -1
+                board[row][col + stack_start] = NO_VALUE
         stack_start += mid
         mid //= 2
         stack_height *= 2
