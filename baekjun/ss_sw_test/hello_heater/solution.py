@@ -111,7 +111,6 @@ def solution():
             break
 
         # 1. 온품기가 바람을 방출, 각 히터 별로 발출한 열들의 좌표를 구하고 그들을 종합함.
-
         for h_r, h_c, h_d in HEATERS:
 
             curr_heat_map = [[0] * C for _ in range(R)]
@@ -120,7 +119,7 @@ def solution():
             new_r = h_r + DIRECTIONS[h_d][0]
             new_c = h_c + DIRECTIONS[h_d][1]
 
-            # 온풍기는 벽을 넘어갈 수 없다, 벽 체크 안해도 됨
+            # 온풍기는 항상 바로 벽을 보지않는다, 벽 체크 안해도 됨
             curr_heat_map[new_r][new_c] = 5
 
             if new_r < 0 or new_r >= R or new_c < 0 or new_c >= C:
@@ -248,7 +247,7 @@ def solution():
                 total_heat_map[row][col] += temperature_distribution_map[row][col]
 
         # 3. 가장자리 온도가 1씩 감소
-        # 1행, R행, 1열 C열, 즉 격자의 가장 끝부분의 온도들을 1씩 감소시킴
+        # 1행, R행, 1열, C열, 즉 격자의 가장 끝부분의 온도들을 1씩 감소시킴
 
         for row in range(R):
             if total_heat_map[row][0] > 0:
